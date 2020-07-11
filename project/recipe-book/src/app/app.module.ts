@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { PrjStartModule as RunModule } from './prj-start/prj-start.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -13,9 +15,11 @@ import { PrjStartModule as RunModule } from './prj-start/prj-start.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RunModule
+    RunModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
