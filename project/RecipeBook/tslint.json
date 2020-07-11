@@ -18,7 +18,6 @@
     "component-selector": [
       true,
       "element",
-      "run",
       "app",
       "kebab-case"
     ],
