@@ -1,0 +1,12 @@
+getControls() {
+	return (this.recipeForm.get('ingredients') as FormArray).controls;
+}
+
+*ngFor="let ingredientCtrl of getControls(); let i = index"
+[formGroupName]="i.toString()"
+
+replace 
+https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyDb0xTaRAoxyCgvaDF3kk5VYOsTwB_3o7Y
+
+with
+https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBtUf7EMK98ifTbAbp9vYqQDHpA3ZZtsM8
