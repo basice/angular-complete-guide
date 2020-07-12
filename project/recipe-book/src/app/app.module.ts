@@ -4,9 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { PrjStartModule as RunModule } from './prj-start/prj-start.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+// import { PrjStartModule as RunModule } from './prj-start/prj-start.module';
+import { PrjBasicsFinalModule as RunModule } from './prj-basics-final/prj-basics-final.module';
 
 @NgModule({
   declarations: [
@@ -15,8 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RunModule,
-    NgbModule
+    RunModule
   ],
   providers: [],
   bootstrap: [AppComponent]
