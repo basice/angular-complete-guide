@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'run',
   templateUrl: './run.component.html',
   styleUrls: ['./run.component.scss']
 })
-export class RunComponent implements OnInit {
+export class RunComponent {
+  loadedFeature = 'recipe';
 
-  constructor() { }
-
-  ngOnInit(): void {
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
   }
-
 }
