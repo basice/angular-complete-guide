@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 // import { PrjCmpDatabindningFinalModule as RunModule } from './prj-cmp-databindning-final/prj-cmp-databindning-final.module';
 // import { PrjDirectivesFinalModule as RunModule } from './prj-directives-final/prj-directives-final.module';
 // import { PrjServicesFinalModule as RunModule } from './prj-services-final/prj-services-final.module';
-import { PrjRoutingFinalModule as RunModule } from './prj-routing-final/prj-routing-final.module';
+// import { PrjRoutingFinalModule as RunModule } from './prj-routing-final/prj-routing-final.module';
+import { PrjObservablesFinalModule as RunModule } from './prj-observables-final/prj-observables-final.module';
 
 @NgModule({
   declarations: [AppComponent],
