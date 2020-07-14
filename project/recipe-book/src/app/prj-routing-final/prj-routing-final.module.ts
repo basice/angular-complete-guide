@@ -37,5 +37,4 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
   providers: [ShoppingListService],
   exports: [RunComponent]
 })
-export class PrjRoutingFinalModule {
-}
+export class PrjRoutingFinalModule {}
