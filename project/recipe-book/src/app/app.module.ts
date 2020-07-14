@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { PrjStartModule as RunModule } from './prj-start/prj-start.module';
@@ -10,14 +10,8 @@ import { AppComponent } from './app.component';
 import { PrjRoutingFinalModule as RunModule } from './prj-routing-final/prj-routing-final.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RunModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, RunModule],
   providers: [],
   bootstrap: [AppComponent]
 })
