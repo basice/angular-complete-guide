@@ -10,6 +10,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { DropdownDirective } from './shared/dropdown.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { ShopingListService } from './shopping-list/shoping-list.service';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     FormsModule,
   ],
+  providers: [ShopingListService],
   exports: [RunComponent]
 })
 export class PrjServicesFinalModule {
