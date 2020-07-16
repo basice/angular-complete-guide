@@ -14,12 +14,12 @@ export class RecipeEditComponent implements OnInit {
   editMode = false;
   recipeForm: FormGroup;
 
+  constructor(private route: ActivatedRoute,
+              private recipeService: RecipeService) { }
+
   get controls() {
     return (this.recipeForm.get('ingredients') as FormArray).controls;
   }
-
-  constructor(private route: ActivatedRoute,
-              private recipeService: RecipeService) { }
 
   ngOnInit() {
     this.route.params
@@ -34,6 +34,14 @@ export class RecipeEditComponent implements OnInit {
 
   onSubmit() {
     console.log(this.recipeForm);
+  }
+
+
+  onAddIngredient() {
+    this.controls.push(new FormGroup({
+      name: new FormControl(),
+      amount: new FormControl()
+    }));
   }
 
   private initForm() {
@@ -66,4 +74,5 @@ export class RecipeEditComponent implements OnInit {
       'ingredients': recipeIngredients
     });
   }
+
 }
