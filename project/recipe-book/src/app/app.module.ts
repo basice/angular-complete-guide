@@ -1,3 +1,4 @@
+/* tslint:disable:max-line-length */
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
 // import { PrjObservablesFinalModule as RunModule } from './prj-observables-final/prj-observables-final.module';
 // import { PrjFormsTdModule as RunModule } from './prj-forms-td/prj-forms-td.module';
 // import { PrjFormsReactiveModule as RunModule } from './prj-forms-reactive/prj-forms-reactive.module';
-import { PrjFormsFinalModule as RunModule } from './prj-forms-final/prj-forms-final.module';
+// import { PrjFormsFinalModule as RunModule } from './prj-forms-final/prj-forms-final.module';
+import { PrjHttp01SaveAndFetchRecipesModule as RunModule } from './prj-http-01-save-and-fetch-recipes/prj-http-01-save-and-fetch-recipes.module';
 
 @NgModule({
   declarations: [AppComponent],
