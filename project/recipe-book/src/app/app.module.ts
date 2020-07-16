@@ -13,7 +13,8 @@ import { AppComponent } from './app.component';
 // import { PrjFormsTdModule as RunModule } from './prj-forms-td/prj-forms-td.module';
 // import { PrjFormsReactiveModule as RunModule } from './prj-forms-reactive/prj-forms-reactive.module';
 // import { PrjFormsFinalModule as RunModule } from './prj-forms-final/prj-forms-final.module';
-import { PrjHttp01SaveAndFetchRecipesModule as RunModule } from './prj-http-01-save-and-fetch-recipes/prj-http-01-save-and-fetch-recipes.module';
+// import { PrjHttp01SaveAndFetchRecipesModule as RunModule } from './prj-http-01-save-and-fetch-recipes/prj-http-01-save-and-fetch-recipes.module';
+import { PrjHttp02FinishedModule as RunModule } from './prj-http-02-finished/prj-http-02-finished.module';
 
 @NgModule({
   declarations: [AppComponent],
