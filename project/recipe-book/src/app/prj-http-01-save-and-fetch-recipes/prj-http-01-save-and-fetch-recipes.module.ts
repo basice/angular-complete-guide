@@ -15,6 +15,7 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { RecipeService } from './recipes/recipe.service';
 import { RunComponent } from './run/run.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { RunComponent } from './run/run.component';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     PrjHttp01SaveAndFetchRecipesRoutingModule
   ],
   exports: [RunComponent],
