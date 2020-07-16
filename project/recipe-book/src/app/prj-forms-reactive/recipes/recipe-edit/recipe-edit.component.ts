@@ -33,12 +33,21 @@ export class RecipeEditComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.recipeForm);
+    // const newRecipe = new Recipe(
+    //   this.recipeForm.value['name'],
+    //   this.recipeForm.value['description'],
+    //   this.recipeForm.value['imagePath'],
+    //   this.recipeForm.value['ingredients']
+    // );
+    if (this.editMode) {
+      this.recipeService.updateRecipe(this.id, this.recipeForm.value);
+    } else {
+      this.recipeService.addRecipe(this.recipeForm.value);
+    }
   }
 
-
   onAddIngredient() {
-    this.controls.push(new FormGroup({
+    (this.recipeForm.get('ingredients') as FormArray).push(new FormGroup({
       name: new FormControl(null, Validators.required),
       amount: new FormControl(null, Validators.pattern(/^[1-9]+[0-9]*$/))
     }));
