@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
 // import { PrjRoutingFinalModule as RunModule } from './prj-routing-final/prj-routing-final.module';
 // import { PrjObservablesFinalModule as RunModule } from './prj-observables-final/prj-observables-final.module';
 // import { PrjFormsTdModule as RunModule } from './prj-forms-td/prj-forms-td.module';
-import { PrjFormsReactiveModule as RunModule } from './prj-forms-reactive/prj-forms-reactive.module';
+// import { PrjFormsReactiveModule as RunModule } from './prj-forms-reactive/prj-forms-reactive.module';
+import { PrjFormsFinalModule as RunModule } from './prj-forms-final/prj-forms-final.module';
 
 @NgModule({
   declarations: [AppComponent],
