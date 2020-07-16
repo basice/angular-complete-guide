@@ -15,6 +15,7 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { RunComponent } from './run/run.component';
 import { PrjFormsReactiveRoutingModule } from './prj-forms-reactive-routing.module';
+import { RecipeService } from './recipes/recipe.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { PrjFormsReactiveRoutingModule } from './prj-forms-reactive-routing.modu
     PrjFormsReactiveRoutingModule
   ],
   exports: [RunComponent],
-  providers: [ShoppingListService],
+  providers: [ShoppingListService, RecipeService],
   bootstrap: [RunComponent]
 })
 export class PrjFormsReactiveModule {}
